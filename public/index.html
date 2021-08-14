@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Conexao com DB postgres</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            margin-top: 80px;
+            width:300px;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            margin: 10px 0;
+            padding: 6px 10px;
+            outline: none;
+            font-size:16px;
+            border: none;
+            border-bottom: 0.1em solid black;
+        }
+        button{
+            margin-top:20px;
+            padding: 10px;
+            display:block;
+            border: none;
+            background-color: black;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        h1{
+            font-family: arial,helvetica,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="api/add" method="post">
+     <h1>Inserir informações do medicamento</h1>
+     <input type="text" name="nome" placeholder="nome do medicamento">
+     <input type="text" name="marca" placeholder="marca">
+     <input type="text" name="ref" placeholder="referência true ou false">
+     <input type="number" name="quant" placeholder="quantidade">
+     <button type="submit" >enviar...</button>
+    </form>
+
+</body>
+</html>
